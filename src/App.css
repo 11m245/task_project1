@@ -1,5 +1,5 @@
 .result-wrapper {
-    max-width: 1200px;
+    max-width: 1280px;
     margin: 10px auto;
     display: flex;
     flex-wrap: wrap;
@@ -68,4 +68,43 @@ img:hover {
     text-overflow: ellipsis;
     /* border: 2px solid red; */
     /* white-space: nowrap; */
+}
+
+/*likeDisLikeButton */
+
+.button-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.button-wrapper>button {
+    margin: 20px 5px;
+    width: 100px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 20px;
+    background-color: #bddada;
+}
+
+.like:hover {
+    background-color: green;
+    color: white;
+    font-weight: bold;
+}
+
+.dislike:hover {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+}
+
+.like:hover .like-symbol {
+    font-size: 25px;
+    transition: 0.2s ease-in-out;
+}
+
+.dislike:hover .dislike-symbol {
+    font-size: 25px;
+    transition: 0.2s ease-in-out;
 }
